@@ -1,2 +1,2 @@
 # inf03
-aaaaaaaaAAAAAAAAAAAAAAAAA
+na dole jest stworzone przez to to zmienic i zmienic ink do obrazka
