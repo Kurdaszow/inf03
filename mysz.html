@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .hot {
+        background-color: black;
+        color: red;
+        }
+    .cool {
+        background-color: green;
+        color: yellow;
+    }
+    </style>
+    
+<body>
+    <ul>
+        <li onclick="jeden()" id="one">element 1 <input type="submit" value="USUN" onclick="jedenbut()"></li>
+        <li onclick="dwa()" id="two">element 2 <input type="submit" value="USUN" onclick="dwatbut()"></li>
+        <li onclick="trzy()" id="three">element 3 <input type="submit" value="USUN" onclick="trzybut()"></li>
+        <li onclick="cztery()" id="four">element 4 <input type="submit" value="USUN" onclick="czterybut()"></li>
+    </ul>
+    <!-- zad 1 - 4 <a onclick="pokaz3()" ondblclick="pokaz2()" >wyswietl dane</a>
+    <input type="submit" value="start" onclick="pokaz()">
+  <input type="submit" value="size" onmouseover="pokaz4()" onmouseout="pokaz5()" >-->
+  <!--zad5 - 10  <input type="submit" value="add" onclick="dodaj()">
+  <input type="submit" value="subtract" onclick="odejm()">
+  <input type="submit" value="divide" onclick="divide()">
+  <input type="submit" value="multiply" onclick="multiply()"> 
+  <input type="submit" value="start" onmousedown="pokaz()" onmouseup="niepokaz()">-->
+  <input type="submit" value="start" onclick="pokaz()">
+    <h1 id="wynik"></h1>
+    <p id="result"></p>
+    <script type="text/javascript">
+        
+        // przyklad
+            // function pokaz() {
+            //     document.getElementsByTagName("ul")[0].style.color="red";
+            //     document.getElementsByTagName("input")[0].setAttribute("onclick","usun()");
+            // }
+            // function usun() {
+            //     document.getElementsByTagName("ul")[0].style.color="black";
+            //     document.getElementsByTagName("input")[0].setAttribute("onclick","pokaz()");
+            // }
+            // function pokaz(){
+            //     var li = document.getElementsByTagName("li");
+            //     for(var i=0;i<li.length;i++){
+            //         li[i].innerText = prompt("podaj wartosc");
+            //     }
+            // }
+            // function pokaz(){
+            //     var a = Number(prompt("podaj liczbe 1"));
+            //     var b = Number(prompt("podaj liczbe 2"));
+            //     document.getElementById("one").innerText =  a+b;
+            // }
+            // var szer = window.innerWidth;
+            // document.getElementById("two").innerText = szer;
+            //zad1 - zad2
+            //  function pokaz3(){
+
+            //   document.getElementById("result").innerText = "Tomasz Kudraszow";
+            //  }
+            //  function pokaz2(){
+
+            //     document.getElementById("result").innerText = "Tomasz";
+            //  }
+            // //zad3
+            // function pokaz(){
+            //      var li = document.getElementsByTagName("li");
+            //      for(var i=0;i<li.length;i++){
+            //      li[i].innerText = prompt("podaj wartosc");
+            //      }
+            //  }
+            //  //zad4
+            //  function pokaz4(){
+            //     document.getElementsByTagName('body')[0].style.fontSize = "50px";
+            //  }
+            //  function pokaz5(){
+            //     document.getElementsByTagName('body')[0].style.fontSize = "12px";
+            //  }
+                //zad5
+                // function dodaj(){
+                //     var a = Number(prompt("podaj a"));
+                //     var b = Number(prompt("podaj b"));
+                //     document.getElementById("wynik").innerText = "WYNIK";
+                //     document.getElementById("result").innerText = a + b;
+                // }
+                // function odejm(){
+                //     var a = Number(prompt("podaj a"));
+                //     var b = Number(prompt("podaj b"));
+                //     document.getElementById("wynik").innerText = "WYNIK";
+                //     document.getElementById("result").innerText = a - b;
+                // }
+                // function divide(){
+                //     var a = Number(prompt("podaj a"));
+                //     var b = Number(prompt("podaj b"));
+                //     document.getElementById("wynik").innerText = "WYNIK";
+                //     document.getElementById("result").innerText = a / b;
+                // }
+                // function multiply(){
+                //     var a = Number(prompt("podaj a"));
+                //     var b = Number(prompt("podaj b"));
+                //     document.getElementById("wynik").innerText = "WYNIK";
+                //     document.getElementById("result").innerText = a * b;
+                // }
+                //zad6
+                // function pokaz(){
+                //     document.getElementsByTagName("li")[0].setAttribute("class","hot");
+                //     document.getElementsByTagName("li")[1].setAttribute("class","cool");
+                //     document.getElementsByTagName("li")[2].setAttribute("class","hot");
+                //     document.getElementsByTagName("li")[3].setAttribute("class","cool");
+                    
+                // }
+                // function niepokaz(){
+                //     document.getElementsByTagName("li")[0].setAttribute("class","");
+                //     document.getElementsByTagName("li")[1].setAttribute("class","");
+                //     document.getElementsByTagName("li")[2].setAttribute("class","");
+                //     document.getElementsByTagName("li")[3].setAttribute("class","");
+                // }
+                 //zad7
+                // function jeden(){
+                //     var li = document.getElementsByTagName("li")[0];
+                //     var p = prompt("podaj text");
+                //     li.innerText = p;
+                // }
+                // function dwa(){
+                //     var li = document.getElementsByTagName("li")[1];
+                //     var p = prompt("podaj text");
+                //     li.innerText = p;
+                // }
+                // function trzy(){
+                //     var li = document.getElementsByTagName("li")[2];
+                //     var p = prompt("podaj text");
+                //     li.innerText = p;
+                // }
+                // function cztery(){
+                //     var li = document.getElementsByTagName("li")[3];
+                //     var p = prompt("podaj text");
+                //     li.innerText = p;
+                // }
+                //zad10
+                // function jedenbut(){
+                //     document.getElementsByTagName("li")[0].remove();
+                // }
+                // function dwatbut(){
+                //     document.getElementsByTagName("li")[1].remove();
+                // }
+                // function trzybut(){
+                //     document.getElementsByTagName("li")[3].remove();
+                // }
+                // function czterybut(){
+                //     document.getElementsByTagName("li")[4].remove();
+                // }
+                //zad11
+            //     function pokaz(){
+            //      var li = document.getElementsByTagName("li");
+            //      for(var i=0;i<li.length;i++){
+            //      li[i].innerText = prompt("podaj wartosc");
+            //      }
+            //  }
+            //zad12
+            // function pokaz(){
+            //     var n = Number(prompt("podja index"));
+            //     document.getElementsByTagName("li")[n].innerText = "";
+            // }
+
+    </script>
+</body>
+</html>
