@@ -1,0 +1,60 @@
+.obraz1{
+    height: 250px;
+    width: 150px;
+}
+.obraz2{
+    width: 750px;
+    height: 200px;
+}
+*{
+    font-family: Garamond;
+}
+.lewy1{
+    height: 500px;
+    float: left;
+    width: 25%;
+    background-color: lavender;
+
+}
+.lewy2{
+
+    height: 300px;
+    float: left;
+    width: 25%;
+    background-color: lavender;
+
+}
+.prawy1{
+    height: 150px;
+    float: left;
+    width: 75%;
+    background-color: indigo;
+    color: white;
+    font-size: 200%;
+    text-align: center;
+}
+.prawy2{
+    float: right;
+    height: 650px;
+    width: 75%;
+    background-color: lavender;
+    font-size: 200%;
+    text-align: center;
+}
+ul{
+    list-style: square;
+}
+img{
+    padding: 5px;
+    margin: 10px;
+}
+img:hover{
+    padding: 4px;
+    border: solid 1px indigo;
+}
+footer{
+
+    background-color: indigo;
+    color: white;
+    text-align: right;
+}

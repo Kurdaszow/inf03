@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styl.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="lewy1">
+        <h2>W ofercie</h2>
+    <ul>
+        <li><a href="twarz.html">Zabiegi na twarz</a><ol>
+            <li>Piling</li>
+            <li>Maska</li>
+            <li>Regulacja brwi</li>
+        </ol></li>
+        <li>Masaż</li>
+        <li>Diety oczyszczające</li>
+    
+    </ul>
+    <a href="index.html">Do strony głównej</a>
+    </section>
+
+    <section class="prawy1">
+        <h1>Salon Kosmetyczny</h1>
+    </section>
+    <section class="prawy2"><h2>Sprawdź cenę swojej wizyty</h2>
+    <input type="checkbox" id="check1" value="45" class="check">Piling<br></input>
+    <input type="checkbox" id="check2" value="30" class="check">Maska<br></input>
+    <input type="checkbox" id="check3" value="20" class="check">Masaż twarzy<br></input>
+    <input type="checkbox" id="check4" value="5" class="check">Regulacja Brwi<br></input>
+    <input type="submit" value="Sprawdz cenę" onclick="Calculate()">
+    <p id="result"></p>
+    <script type="text/javascript">
+        function Calculate(){
+            var c = document.getElementsByClassName("check");
+            var w = 0;
+            for(i=0;i<4;i++){
+                if(c[i].checked){
+                    w += Number(c[i].value)
+                }
+            }
+
+            document.getElementById("result").innerHTML = "Cena Zabiegów: " +  + w;
+        }
+    </script>
+    </section>
+    <section class="lewy2">
+        <img class="obraz1" src="obraz1.jpg" alt="Kosmetyczka">
+    </section>
+    <footer><p>Autor: </p></footer>
+
+</body>
+</html>
+
+
+
+
